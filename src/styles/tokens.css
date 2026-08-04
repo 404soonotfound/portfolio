@@ -1,0 +1,231 @@
+:root {
+  /* ========================================
+   * Colors
+   * ====================================== */
+
+  /* Figma variables: Dev Mode의 CSS 변수명을 그대로 사용합니다. */
+
+  --Brand-Primary: #2563eb;
+  --Border: #e2e8f0;
+
+  --Text-Primary: #0f172a;
+  --Text-Secondary: #475569;
+  --Text-Tertiary: #94a3b8;
+  --Text-White: #ffffff;
+
+  --Background-Default: #ffffff;
+  --Background-Primary: var(--Brand-Primary);
+  --Background-Tertiary: #94a3b8;
+  --Background-Subtle: #f1f5f9;
+  --Background-Card: #f8fafc;
+
+  --Brand-Light: #eff6ff;
+
+  /* Application-only colors */
+
+  --Primary-Hover: #1d4ed8;
+  --Text-Muted: #64748b;
+  --Text-On-Primary: var(--Background-Default);
+  --Focus-Ring: rgb(37 99 235 / 35%);
+
+  /* ========================================
+   * Font Families
+   * ====================================== */
+
+  --font-family-primary:
+    "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --font-family-tag: "Inter", "Noto Sans KR", sans-serif;
+
+  /* ========================================
+   * Display
+   * ====================================== */
+
+  --font-display-size: 48px;
+  --font-display-weight: 700;
+  --font-display-line-height: 56px;
+  --font-display-letter-spacing: -1.44px;
+
+  /* ========================================
+   * Heading 1
+   * ====================================== */
+
+  --font-heading-1-size: 32px;
+  --font-heading-1-weight: 700;
+  --font-heading-1-line-height: 40px;
+  --font-heading-1-letter-spacing: -0.96px;
+
+  /* ========================================
+   * Heading 2
+   * ====================================== */
+
+  --font-heading-2-size: 24px;
+  --font-heading-2-weight: 700;
+  --font-heading-2-line-height: 32px;
+  --font-heading-2-letter-spacing: -0.48px;
+
+  /* ========================================
+   * Heading 3
+   * ====================================== */
+
+  --font-heading-3-size: 20px;
+  --font-heading-3-weight: 700;
+  --font-heading-3-line-height: 28px;
+  --font-heading-3-letter-spacing: -0.4px;
+
+  /* ========================================
+   * Body Large
+   * ====================================== */
+
+  --font-body-large-size: 16px;
+  --font-body-large-weight: 400;
+  --font-body-large-bold-weight: 700;
+  --font-body-large-line-height: 26px;
+  --font-body-large-letter-spacing: 0;
+
+  /* ========================================
+   * Body Default
+   * ====================================== */
+
+  --font-body-default-size: 15px;
+  --font-body-default-weight: 400;
+  --font-body-default-medium-weight: 500;
+  --font-body-default-bold-weight: 700;
+  --font-body-default-line-height: 24px;
+  --font-body-default-letter-spacing: 0;
+
+  /* ========================================
+   * Caption
+   * ====================================== */
+
+  --font-caption-size: 13px;
+  --font-caption-weight: 400;
+  --font-caption-medium-weight: 500;
+  --font-caption-line-height: 20px;
+  --font-caption-letter-spacing: 0;
+
+  /* ========================================
+   * Button
+   * ====================================== */
+
+  --font-button-size: 15px;
+  --font-button-weight: 500;
+  --font-button-line-height: 23px;
+  --font-button-letter-spacing: 0;
+
+  /* ========================================
+   * Tag
+   * ====================================== */
+
+  --font-tag-size: 11px;
+  --font-tag-weight: 500;
+  --font-tag-line-height: 16px;
+  --font-tag-letter-spacing: 0;
+
+  /* ========================================
+   * Section Label
+   * ====================================== */
+
+  --font-section-label-size: 11px;
+  --font-section-label-weight: 600;
+  --font-section-label-line-height: 17px;
+  --font-section-label-letter-spacing: 1.32px;
+
+  /* ========================================
+   * Navigation
+   * ====================================== */
+
+  --font-navigation-size: 14px;
+  --font-navigation-weight: 500;
+  --font-navigation-line-height: 21px;
+  --font-navigation-letter-spacing: 0;
+
+  /* ========================================
+   * Layout
+   *
+   * PC 기본값: 1024px 이상
+   * ====================================== */
+
+  --layout-content-max: 1120px;
+  --layout-page-gutter: 40px;
+  --layout-section-spacing: 120px;
+  --layout-header-height: 64px;
+
+  /* ========================================
+   * Spacing
+   * ====================================== */
+
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-68: 68px;
+  --spacing-72: 72px;
+  --spacing-76: 76px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-120: 120px;
+
+  /* ========================================
+   * Border Radius
+   * ====================================== */
+
+  --radius-xsmall: 4px;
+  --radius-small: 6px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+  --radius-pill: 999px;
+
+  /* ========================================
+   * Motion
+   * ====================================== */
+
+  --transition-fast: 120ms ease;
+  --transition-default: 180ms ease;
+  --transition-slow: 280ms ease;
+}
+
+/* ==========================================
+ * Tablet
+ *
+ * 768px ~ 1023px
+ * ======================================== */
+
+@media (max-width: 1023px) {
+  :root {
+    /* Layout */
+
+    --layout-page-gutter: 32px;
+    --layout-section-spacing: 96px;
+    --layout-header-height: 64px;
+  }
+}
+
+/* ==========================================
+ * Mobile
+ *
+ * 0px ~ 767px
+ * ======================================== */
+
+@media (max-width: 767px) {
+  :root {
+    /* Layout */
+
+    --layout-page-gutter: 20px;
+    --layout-section-spacing: 80px;
+    --layout-header-height: 56px;
+  }
+}
