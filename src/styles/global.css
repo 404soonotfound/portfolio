@@ -55,6 +55,7 @@ main {
 
 .section {
   margin: 0 auto;
+  padding: 0 24px;
   max-width: var(--layout-content-max);
   padding-block: var(--layout-section-spacing);
 }

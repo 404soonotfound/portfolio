@@ -7,11 +7,33 @@ const props = defineProps({
     type: String,
     default: "primary",
   },
+  outlined: {
+    type: Boolean,
+  },
+  size: {
+    type: String,
+    default: "md",
+  },
+  icon: {
+    type: Boolean,
+  },
 });
 </script>
 
 <template>
-  <button class="base-button" :class="`base-button--${theme}`">
+  <button
+    class="base-button"
+    :class="[
+      `base-button--${theme}`,
+      `size-${size}`,
+      {
+        'base-button--outlined': outlined,
+      },
+      {
+        'icon-button': icon,
+      },
+    ]"
+  >
     <slot />
   </button>
 </template>
@@ -20,8 +42,15 @@ const props = defineProps({
 .base-button {
   display: inline-flex;
   align-items: center;
-  padding: var(--spacing-10) var(--spacing-20);
   border-radius: var(--radius-medium);
+
+  &.size-sm {
+    padding: var(--spacing-6) var(--spacing-12);
+  }
+
+  &.size-md {
+    padding: var(--spacing-8) var(--spacing-16);
+  }
 
   &--primary {
     color: var(--Text-White);
@@ -36,5 +65,14 @@ const props = defineProps({
     background-color: transparent;
     padding: 0;
   }
+
+  &.base-button--outlined {
+    background: var(--Background-Default);
+    border: 1px solid var(--Border);
+  }
+}
+.icon-button {
+  aspect-ratio: 1;
+  border-radius: 50%;
 }
 </style>

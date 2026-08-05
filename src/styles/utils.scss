@@ -116,10 +116,16 @@ $spacing-scale: (
   height: 1px;
   background-color: var(--Border);
 }
+.w-full {
+  width: 100%;
+}
 /* ========================================
  * Spacing
  * ====================================== */
 
+.mx-auto {
+  margin: 0 auto;
+}
 @each $step, $value in $spacing-scale {
   .gap-#{$step} {
     gap: $value !important;

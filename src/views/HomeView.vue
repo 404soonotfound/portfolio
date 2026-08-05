@@ -24,6 +24,5 @@ import ContactSection from "@/components/home/contact.vue";
   flex: 1;
   width: 100%;
   margin: 0 auto;
-  padding: var(--spacing-24);
 }
 </style>

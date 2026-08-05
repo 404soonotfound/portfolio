@@ -223,6 +223,12 @@ export const projects = [
         ],
       },
     ],
+    // links: [
+    //   {
+    //     label: "서비스 보기",
+    //     url: "https://www.poincampus.com",
+    //   },
+    // ],
   },
 ] satisfies Project[];
 
