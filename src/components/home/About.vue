@@ -9,9 +9,9 @@ const credentials = [
   {
     id: "computer-science-degree",
     category: "학점은행제",
-    status: "진행 중",
+    status: "재학중",
     title: "컴퓨터공학 전공",
-    descriptions: ["학사학위 과정 진행 중"],
+    descriptions: ["학사학위 과정 재학중"],
   },
   {
     id: "polytechnic-degree",

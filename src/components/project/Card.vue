@@ -18,7 +18,7 @@ const props = defineProps<{
     class="flex align-center gap-14"
     :class="{ 'flex-col-reverse': isMobile }"
   >
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4 flex-1">
       <div class="flex align-center gap-2 flex-wrap">
         <span class="text-caption-medium text-brand-primary">{{
           index + 1 >= 10 ? index + 1 : `0${index + 1}`

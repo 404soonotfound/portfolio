@@ -41,13 +41,7 @@ const onSendEmail = () => {
         {{ link.name }}
       </NavigationItem>
       <li>
-        <BaseButton
-          theme="primary"
-          :size="isMobile ? 'large' : 'medium'"
-          @click="onSendEmail"
-        >
-          이메일 보내기
-        </BaseButton>
+        <BaseButton @click="onSendEmail"> 이메일 보내기 </BaseButton>
       </li>
     </ul>
   </div>

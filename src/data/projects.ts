@@ -6,6 +6,51 @@ import srMaasImage from "@/assets/images/projects/sr-maas.webp";
 
 export const projects = [
   {
+    id: "ksure",
+    title: "한국무역보험공사 - 신용평가 모형 시스템 개발 사업",
+    subtitle: "WebSquare 기반 전산 시스템 UI 구현 ",
+    category: "씨와이 · SI 프로젝트 · 전산 시스템 UI",
+    period: "2026.09 — 진행중",
+    summary: "국내/외 전산 시스템 UI를 구현중입니다.",
+
+    description:
+      "한국무역보험공사(K-SURE) 신용평가 모형 관련 업무 시스템 구축 프로젝트의 초기 개발 단계에서 화면설계서 작성과 WebSquare 기반 화면 퍼블리싱을 담당했습니다. 업무 요구사항을 바탕으로 화면 구성과 UI 요소를 설계하고, 작성한 화면설계서를 기준으로 실제 업무 화면을 구현했습니다.",
+
+    thumbnail: "",
+    thumbnailAlt: "이미지 준비중",
+    coverImage: "",
+    coverImageAlt: "이미지 준비중",
+
+    techStack: [
+      { name: "WebSquare5", areas: ["frontend"] },
+      { name: "JavaScript", areas: ["frontend"] },
+      { name: "Jquery", areas: ["frontend"] },
+    ],
+
+    sections: [
+      {
+        id: "responsibilities",
+        title: "담당 업무",
+        items: [
+          "신용평가 업무 시스템 화면설계서 작성",
+          "업무 요구사항을 기반으로 화면 구성 및 UI 설계",
+          "화면별 데이터 항목과 업무 조건을 고려한 UI 구성",
+          "WebSquare 기반 업무 화면 퍼블리싱",
+          "GridView, 입력 폼 등 WebSquare 컴포넌트를 활용한 화면 구현",
+        ],
+      },
+      {
+        id: "standards",
+        title: "화면 설계 및 구현",
+        items: [
+          "업무 흐름과 요구사항을 반영한 화면 구조 설계",
+          "화면설계서 내 입력 항목, 버튼, GridView 및 화면 동작 정의",
+          "공통 UI 기준을 고려한 화면 구현",
+        ],
+      },
+    ],
+  },
+  {
     id: "baradun",
     title: "바라던 바다",
     subtitle: "공공 해양 데이터 통합·활동 추천 서비스",
@@ -97,7 +142,7 @@ export const projects = [
     title: "SR-MaaS 구축 시스템",
     subtitle: "WebSquare 기반 업무 시스템 UI 구현 및 유지보수",
     category: "씨와이 · SI 프로젝트 · 업무 시스템 UI",
-    period: "2025.03 — 2026.06",
+    period: "2025.03 — 2026.07",
 
     summary:
       "씨와이 비즈니스나우(SI 사업) 1본부 소속으로 SR-MaaS 구축 시스템 지원팀 퍼블리싱 파트에 투입되어 WebSquare 기반 업무 화면을 구현했습니다.",
@@ -111,7 +156,7 @@ export const projects = [
     coverImageAlt: "SR-MaaS 구축 시스템 대표 이미지",
 
     techStack: [
-      { name: "WebSquare", areas: ["publishing"] },
+      { name: "WebSquare AI", areas: ["publishing"] },
       { name: "HTML5", areas: ["publishing"] },
       { name: "CSS3", areas: ["publishing"] },
       { name: "JavaScript", areas: ["publishing"] },

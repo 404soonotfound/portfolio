@@ -49,34 +49,42 @@ const onClick = () => {
 
 <template>
   <div class="banner">
-    <div class="banner__content">
-      <span class="text-caption-medium text-tertiary">다음 프로젝트</span>
-      <h3 class="text-h3">{{ props.name }}</h3>
-      <p class="text-body-default text-secondary">{{ props.summary }}</p>
-    </div>
+    <div class="banner_wrapper">
+      <div class="banner__content">
+        <span class="text-caption-medium text-tertiary">다음 프로젝트</span>
+        <h3 class="text-h3">{{ props.name }}</h3>
+        <p class="text-body-default text-secondary">{{ props.summary }}</p>
+      </div>
 
-    <BaseButton
-      icon
-      type="button"
-      aria-label="다음 프로젝트로 이동"
-      @click.stop.prevent="onClick"
-    >
-      <i class="icon-arrow-r" aria-hidden="true"></i>
-    </BaseButton>
+      <BaseButton
+        icon
+        type="button"
+        aria-label="다음 프로젝트로 이동"
+        @click.stop.prevent="onClick"
+      >
+        <i class="icon-arrow-r" aria-hidden="true"></i>
+      </BaseButton>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .banner {
   width: 100%;
-  max-width: 1120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 48px 24px;
   gap: 48px;
+  border-top: 1px solid var(--Border);
+  background-color: var(--Background-Default);
+}
+.banner_wrapper {
+  max-width: 1120px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid var(--Border);
-  background-color: var(--Background-Default);
+  width: 100%;
 }
 
 .banner__content {
