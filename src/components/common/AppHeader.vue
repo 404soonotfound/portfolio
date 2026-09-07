@@ -15,7 +15,7 @@ const project = computed(() =>
   projects.find((p) => p.id === route.params.slug),
 );
 const pageCnt = computed(() => {
-  const currentCnt = projects.findIndex((p) => p.id === project.value.id) + 1;
+  const currentCnt = projects.findIndex((p) => p.id === project.value?.id) + 1;
   const totalCnt = projects.length || 0;
   return `${currentCnt} / ${totalCnt}`;
 });

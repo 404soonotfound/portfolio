@@ -1,24 +1,25 @@
 <script setup lang="ts">
-import { ref, computed } from "vue";
-import { useRoute, useRouter } from "vue-router";
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 import { projects } from "@/data/projects.ts";
+import type { Project } from "@/types/projects";
 import { useIsMobile } from "@/composables/useIsMobile";
 
 import Tag from "@/components/common/Tag.vue";
 import BaseButton from "@/components/common/BaseButton.vue";
 import Image from "@/components/common/Image.vue";
 import BottomNextBanner from "@/components/common/BottomNextBanner.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
 
 const route = useRoute();
-const router = useRouter();
 const isMobile = useIsMobile();
 
-const product = computed(() =>
+const product = computed<Project | undefined>(() =>
   projects.find((p) => p.id === route.params.slug),
 );
 
 const category = computed(() => product.value?.category || "");
-const name = computed(() => product.value?.name || "");
+const name = computed(() => product.value?.title || "");
 const subtitle = computed(() => product.value?.subtitle || "");
 const links = computed(() => product.value?.links || []);
 const descSections = computed(() => product.value?.sections || []);
@@ -29,7 +30,7 @@ const openLink = (url: string) => {
 </script>
 
 <template>
-  <div class="w-full flex flex-col">
+  <div v-if="product" class="w-full flex flex-col">
     <div class="container">
       <div class="container-box">
         <span class="text-caption text-tertiary mb-4">{{ category }}</span>
@@ -138,6 +139,7 @@ const openLink = (url: string) => {
     </div>
     <BottomNextBanner :name="product.title" :summary="product?.summary" />
   </div>
+  <NotFoundView v-else />
 </template>
 
 <style scoped lang="scss">
